@@ -1,0 +1,27 @@
+1. 
+Templates are used to allow for flexiblity in the datatypes a linked list can be constructed with depending on client implementation.
+DList has the attributes head and length
+head is the first node in the list, and always exists, even if NULL
+length is the number of items in the list
+
+2. 
+makeEmpty removes all items in the list, it is used by the deconstructor
+deleteItem removes a specfied item from the list and relinks its neighbors to each other
+inList checks to see if a specific item is in the list
+isEmpty checks to see if the list has anything in it at all
+print displays each of the items in the list
+insertHead adds an item to the front of the list
+appendTail adds an item to the back of the list
+lengthIs give the length of the list
+
+location finds the address of an item in the list
+last find the address of the last item in the list
+deleteLocation removes an item from the list
+
+3.
+The Move to the Front algorithm finds an item in a linked list, the moves that item to the front of the list. This is useful because if items are repeadtedly being accessed,
+the most frequently accesed items will naturally move to the front postitions while rarely used items will drift to the back over time.
+
+4. 
+The client file consists of a do while loop containing a switch that takes in user input to call a paticular function of the program. The user can create, edit, display, and 
+run the Move to the Front with a doubly linked list using the functions of the client and the DList class
